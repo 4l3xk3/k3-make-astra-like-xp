@@ -7,12 +7,12 @@
 # All rights reserved
 # Russia, Electrostal, 2019
 
-sed -i 's/*UseComposite=.*/UseComposite=true/g' $HOME/.fly/theme/*.themerc*
-#sed -i 's/*FullOpaque=.*/UseComposite=true/g' $HOME/.fly/theme/*.themerc*
-sed -i 's/*FullOpaque=.*/UseComposite=false/g' $HOME/.fly/theme/*.themerc*
-sed -i 's|*IconTheme=fly-astra.*|IconTheme=fly-astra|g' $HOME/.fly/theme/*.themerc*
-sed -i 's|*PrimaryColor=.*|PrimaryColor=#5682a3|g' $HOME/.fly/paletterc
-sed -i 's|*UsePager.*|UsePager=false|g' $HOME/.fly/theme/*.themerc*
+sed -i 's/.*UseComposite=.*/UseComposite=true/g' $HOME/.fly/theme/*.themerc*
+#sed -i 's/.*FullOpaque=.*/UseComposite=true/g' $HOME/.fly/theme/*.themerc*
+sed -i 's/.*FullOpaque=.*/UseComposite=false/g' $HOME/.fly/theme/*.themerc*
+sed -i 's|.*IconTheme=fly-astra.*|IconTheme=fly-astra|g' $HOME/.fly/theme/*.themerc*
+sed -i 's|.*PrimaryColor=.*|PrimaryColor=#5682a3|g' $HOME/.fly/paletterc
+sed -i 's|.*UsePager.*|UsePager=false|g' $HOME/.fly/theme/*.themerc*
 
 mkdir $HOME/xp
 pushd $HOME/xp
