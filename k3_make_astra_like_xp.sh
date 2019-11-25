@@ -3,14 +3,14 @@
 # Magic script to make Astra looks like windows XP.
 # Tested on AstraLinux Smolensk 1.6 and Orel 2.12
 # ========================================================================
-# Usage: Login as target user and run ./k3_make_astra_like_xp.sh
+# Usage: Login as target user and run: sh ./k3_make_astra_like_xp.sh
 # user must have sudo permissions
 # You can put yours files here: 
 # wallpaper - $HOME/xp/xpwall.jpg
 # button - $HOME/xp/xpbutt.png
 # to turn back changes: 
 # reset setiings in fly-admin-theme 
-# and reinstall fly-data packet(apt-get install --reinstall fly-data)
+# and reinstall fly-data packet(sudo apt-get install --reinstall fly-data)
 # ========================================================================
 # Author: Alexey Kovin <4l3xk3@gmail.com>
 #         Alexey Kovin <akovin@astralinux.ru>
@@ -31,6 +31,8 @@ sed -i 's|.*PrimaryColor=.*|PrimaryColor=#4455dd|g' $HOME/.fly/paletterc
 sed -i 's|.*ColorScheme=.*|ColorScheme=fly-user|g' $HOME/.fly/paletterc
 sed -i 's|.*UsePager.*|UsePager=false|g' $HOME/.fly/theme/*.themerc*
 sed -i 's|.*NoStartButtonTitle.*|NoStartButtonTitle=false|g' $HOME/.fly/theme/*.themerc*
+sed -i 's|.*WallPaperPos.*|WallPaperPos=Stretch|g' $HOME/.fly/theme/*.themerc*
+
 
 if [ ! -d $HOME/xp ]; then
     mkdir -p $HOME/xp
