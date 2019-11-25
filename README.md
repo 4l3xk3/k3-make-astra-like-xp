@@ -24,7 +24,7 @@ and reinstall fly-data packet(sudo apt-get install --reinstall fly-data)
 
 Author: Alexey Kovin <4l3xk3@gmail.com>
 
-        Alexey Kovin <akovin@astralinux.ru>
+Alexey Kovin <akovin@astralinux.ru>
         
 All rights reserved
 
